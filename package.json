@@ -1,7 +1,7 @@
 {
   "name": "mdn",
   "version": "0.0.0",
-  "description": "Quickly open documentation TODO",
+  "description": "CLI for easily going to JavaScript documentation on MDN",
   "main": "index.js",
   "bin": {
       "mdn": "index.js"
