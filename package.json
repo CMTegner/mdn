@@ -1,0 +1,29 @@
+{
+  "name": "mdn",
+  "version": "0.0.0",
+  "description": "Quickly open documentation TODO",
+  "main": "index.js",
+  "bin": {
+      "mdn": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CMTegner/mdn.git"
+  },
+  "keywords": [
+    "mdn",
+    "mozilla",
+    "developer",
+    "network",
+    "documentation",
+    "docs"
+  ],
+  "author": "Christian Tegnér",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/CMTegner/mdn/issues"
+  },
+  "dependencies": {
+    "open": "0.0.4"
+  }
+}
