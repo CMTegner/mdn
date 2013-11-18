@@ -1,7 +1,7 @@
 {
   "name": "mdn",
   "version": "0.0.0",
-  "description": "CLI for easily going to JavaScript documentation on MDN",
+  "description": "CLI for easily opening JavaScript documentation on the Mozilla Developer Network (MDN) in your browser",
   "main": "index.js",
   "bin": {
       "mdn": "index.js"
