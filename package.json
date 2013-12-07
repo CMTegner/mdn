@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CLI for easily opening JavaScript documentation on the Mozilla Developer Network (MDN) in your browser",
   "main": "index.js",
+  "preferGlobal": true,
   "bin": {
       "mdn": "index.js"
   },
