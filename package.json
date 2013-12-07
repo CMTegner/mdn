@@ -1,11 +1,11 @@
 {
   "name": "mdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI for easily opening JavaScript documentation on the Mozilla Developer Network (MDN) in your browser",
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-      "mdn": "index.js"
+    "mdn": "index.js"
   },
   "repository": {
     "type": "git",
