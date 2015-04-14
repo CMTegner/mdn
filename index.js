@@ -19,6 +19,7 @@ var opts = require("nomnom")
         }
     }).parse();
 
+var uri = "http://mdn.io/" + opts.search.join(" ");
 var open = require("open");
 
-open("http://mdn.io/" + opts.search.join(" "));
+open(uri);
