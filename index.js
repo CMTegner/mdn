@@ -27,7 +27,11 @@ var opts = require("nomnom")
 var uri = "http://mdn.io/" + opts.search.join(" ");
 
 if (opts.markdown) {
-
+    var jsdom = require("jsdom");
+    jsdom.env(uri,function (errors, window) {
+        var html = window.document.querySelector("#wikiArticle").innerHTML;
+        document.stdout.write(html);
+    });
 } else {
     var open = require("open");
     open(uri);
