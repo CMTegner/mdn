@@ -9,6 +9,11 @@ var opts = require("nomnom")
             list: true,
             required: true
         },
+        markdown: {
+            abbr: "m",
+            help: "Output the article as markdown instead of opening it in a browser",
+            flag: true
+        },
         version: {
             abbr: "v",
             help: "Print the version and exit",
@@ -20,6 +25,10 @@ var opts = require("nomnom")
     }).parse();
 
 var uri = "http://mdn.io/" + opts.search.join(" ");
-var open = require("open");
 
-open(uri);
+if (opts.markdown) {
+
+} else {
+    var open = require("open");
+    open(uri);
+}
