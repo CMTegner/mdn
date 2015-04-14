@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 
+var opts = require("nomnom")
+    .script("mdn")
+    .options({
+        search: {
+            position: 0,
+            help: "Search terms",
+            list: true,
+            required: true
+        }
+    }).parse();
+
 var open = require("open");
-var search = process.argv.slice(2).join(" ");
 
-if (!search) {
-    console.log("Usage: mdn <search terms>");
-    process.exit(1);
-}
-
-open("http://mdn.io/" + search);
+open("http://mdn.io/" + opts.search.join(" "));
