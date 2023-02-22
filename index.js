@@ -21,4 +21,4 @@ var opts = require("nomnom")
 
 var open = require("open");
 
-open("http://mdn.io/" + opts.search.join(" "));
+open("https://mdn.io/" + opts.search.join(" "));
